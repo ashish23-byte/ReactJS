@@ -14,10 +14,6 @@ const App = () => {
 
    copyTask.push({title,details})
    setTask(copyTask)
-
-   console.log(task);
-   
-    
     setTitle('')
     setDetails('')
   }
@@ -69,7 +65,7 @@ const App = () => {
     
        </form> 
        <div className='lg:w-1/2 lg:border-l-2 p-10 border-zinc-700'>
-       <h1 className='text-3xl font-bold'>Your Notes</h1>
+       <h1 className='text-3xl font-bold'>Recent Notes</h1>
        <div className='flex flex-wrap items-start justify-start gap-5 mt-5 h-[90%] overflow-auto'>
         {task.map(function(elem,idx){
            
